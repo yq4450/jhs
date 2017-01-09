@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common_head.css"/>
+			<script type="text/javascript">
+		var rem;
+		;(function(win,doc){
+			 rem = 20/320*doc.documentElement.clientWidth;
+            doc.documentElement.style.fontSize = rem+'px';
+		  win.addEventListener('resize',function(){
+                rem = 20/320*doc.documentElement.clientWidth;
+                doc.documentElement.style.fontSize = rem+'px';
+            },false);
+		})(window,document);
+			
+	</script>
+		
+	</head>
+	
+	<body>
+	<!--顶栏Start-->
+		<header>
+				<a href="javascript:;" class='top_back'>返回</a>
+				<span class='top_Title'><img src='img/toplogo.png' alt=''/></span>
+				<a href="javascript:;" class='top_class'>分类</a>
+		</header>
+	
+	<!--顶栏End-->	
+		<!--顶部分类Start-->
+		<section class="topTab">
+			<div class='topTitle clearfix'>
+			<a href="javascript:;" class='active'>商品</a>
+			<a href="javascript:;">生活</a>
+			<a href="javascript:;">品牌</a>
+			<a href="javascript:;">聚宝盆</a>
+			</div>
+		</section>
+		<!--顶部分类End-->
+		
+	</body>
+</html>

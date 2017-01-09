@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+		<script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var rem;
+		;(function(win,doc){
+			 rem = 20/320*doc.documentElement.clientWidth;
+            doc.documentElement.style.fontSize = rem+'px';
+		  win.addEventListener('resize',function(){
+                rem = 20/320*doc.documentElement.clientWidth;
+                doc.documentElement.style.fontSize = rem+'px';
+            },false);
+		})(window,document);
+			
+	</script>
+	</head>
+	<body>
+		
+		<header>
+				<a href="javascript:;" class='top_back'>返回</a>
+				<span class='top_Title'><img src="img/topLogo.png"/></span>
+				<a href="javascript:;" class='top_class' id='listBtn'>分类</a>
+		</header>
+		<section class="topTab">
+			<div class='topTitle clearfix'>
+			<a href="javascript:;" class='active'>商品</a>
+			<a href="shop-lifeTuan.html">生活</a>
+			<a href="javascript:;">品牌</a>
+			<a href="javascript:;">聚宝盆</a>
+			</div>
+		</section>
+		
+		<!--商品列表Start-->
+		<section class='shopList'>
+		
+			<!--start-->	
+			<!--
+				<div class="shopItem">
+				<div class="shopItem_img_box">
+					<a href="javascript:;"><img src="img/item/item_img1.png"/></a>
+				</div>
+					<div class="shopItem_txt_box">
+						<div class="itemName"><a href="javascript:;"><span class='itemSale'>1.2折</span>新田园，散养鸡蛋新田园，散养鸡蛋新田园散养鸡蛋</a></div>
+						<div class="price">
+							<span class="nowPrice"><i>&yen;</i>299.90</span>
+							<del class="oldPrice">&yen;99.99</del>
+						</div>
+						<div class="sellsNum"><span class='per_num'>9999</span>人已购买</div>
+					</div>
+			</div>
+			-->
+			<!--end-->
+		
+		</section>
+				<!--商品列表end-->
+		<!--分类按钮 Start-->
+		<section class='classify' id="classifyBox">
+			<div class="classMenu">
+				<ul class="tabNav">
+					<li class="active">分类</li>
+					<li>地区</li>
+				</ul>
+				<ul class="tabList clearfix">
+					<li><a href="javascript:;">全部</a></li>
+					<li><a href="javascript:;">摄影</a></li>
+					<li><a href="javascript:;">美食</a></li>
+					<li><a href="javascript:;">培训</a></li>
+					<li><a href="javascript:;">旅游</a></li>
+					<li><a href="javascript:;">休闲</a></li>
+					<li><a href="javascript:;">电影</a></li>
+					<li><a href="javascript:;">酒店</a></li>
+					<li><a href="javascript:;">生活服务</a></li>
+					<li><a href="javascript:;">粮油生鲜</a></li>
+					<li><a href="javascript:;">丽人</a></li>
+					<li><a href="javascript:;">汽车服务</a></li>
+					<li><a href="javascript:;">卡券</a></li>
+				</ul>
+			</div>
+		</section>
+		<!--分类按钮 end-->
+	</body>
+	<script src="js/require.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/shop-init.js" type="text/javascript" charset="utf-8"></script>
+</html>

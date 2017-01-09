@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>聚划算-地理位置</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, maximum-scale=1.0,minimum-scale=1.0" />
+    <!--苹果专有，能添加到主屏幕，当做app使用-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--苹果专有，状态栏样式变成黑色。-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--禁止拨号，发邮件。-->
+    <meta content="telephone=no,email=no" name="format-detection"/>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/JHS-map.css">
+
+    <script src="js/require.js" data-main="js/JHS-map-infi"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.3"></script>
+</head>
+<body>
+    <section class="wrap">
+
+        <!--百度地图数据接口（隐藏）-->
+        <div id="allmap" style="display:none"></div>
+
+        <!--页面头部 开始-->
+        <header class="header">
+            <a href="javascript:;" class="back">
+                <img src="img/map-back.png"
+                     alt="back">
+            </a>
+            <h2>切换城市</h2>
+        </header>
+        <!--页面头部 结束-->
+
+        <!--页面主体 开始-->
+        <section class="mian">
+
+            <!--当前位置 开始-->
+            <section class="current-location">
+                <i class="icon-position"></i>
+                <span id="now-pos">当前位置 -</span>
+                <strong id="now-position">北京</strong>
+                <div id="true-icon"></div>
+            </section>
+            <!--当前位置 结束-->
+
+            <!--城市列表 开始-->
+            <section class="list" id="list">
+
+                <!--热门城市 开始-->
+                <section class="list-hot">
+                    <h3 class="title">热门城市</h3>
+                    <ul class="city">
+                        <li><span>南京</span></li>
+                        <li><span>福州</span></li>
+                        <li><span>武汉</span></li>
+                        <li><span>天津</span></li>
+                    </ul>
+                </section>
+                <!--热门城市 结束-->
+
+                <!--按A-Z的城市列表 开始-->
+                <section id="A"></section>
+                <section id="B"></section>
+                <section id="C"></section>
+                <!--按A-Z的城市列表 结束-->
+            </section>
+        </section>
+
+        <!--页面主体 结束-->
+        
+    </section>
+
+</body>
+</html>
